@@ -14,14 +14,10 @@ namespace MiniHackathon.Models
             Database.EnsureCreated();
         }
 
-        public DbSet<User> Users { get; set; }
+       
         public DbSet<Doctor> Doctor { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<User>().ToTable("User");
-            modelBuilder.Entity<Doctor>().ToTable("Doctor");
-        }
+        
     }
 
 }
