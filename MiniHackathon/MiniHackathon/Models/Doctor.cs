@@ -12,7 +12,7 @@ namespace MiniHackathon.Models
         public string Speciality { get; set; }
         public string Hospital { get; set; }
         public double Rating { get; set; }
-
-
+        public string Position { get; set; }
+        public Hospital ThisHospital { get; set; }
     }
 }
