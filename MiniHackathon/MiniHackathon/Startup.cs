@@ -43,6 +43,9 @@ namespace MiniHackathon
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedEmail = true)
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,6 +68,7 @@ namespace MiniHackathon
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+            //app.UseAuthorization();
 
             app.UseMvc(routes =>
             {
