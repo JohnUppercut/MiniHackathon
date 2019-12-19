@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @{
+    ViewData["Title"] = "Профиль врача";
+    }
+    <link rel="stylesheet" href="~/css/DoctorProfile.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+</head>
+<body>
+    <div class="container py-4 my-2">
+        <div class="row">
+            <div class="col-md-4 pr-md-5">
+                <img class="w-100 rounded border" src="https://cdn.bootstrapsnippet.net/assets/image/dummy-avatar.jpg" />
+                <div class="pt-4 mt-2">
+                    <section class="mb-4 pb-1">
+                        <h3 class="h6 font-weight-light text-secondary text-uppercase">Места работы</h3>
+                        <div class="work-experience pt-2">
+                            <div class="work mb-4">
+                                <strong class="h5 d-block text-secondary font-weight-bold mb-1">ГБУЗ №4</strong>
+                                <strong class="h6 d-block text-warning mb-1">Главный врач</strong>
+                                <p class="text-secondary">Комсак, пляж №3</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mb-5 mb-md-0">
+                        <h3 class="h6 font-weight-light text-secondary text-uppercase">Специальность</h3>
+                        <div class="skills pt-1 row">
+                            <div class="col-12 mb-2">
+                                <span>Дермотолог</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="d-flex align-items-center">
+                    <h2 class="font-weight-bold m-0">
+                        Мансуров Казбек Абдулович
+                    </h2>
+                    <address class="m-0 pt-2 pl-0 pl-md-4 font-weight-light text-secondary">
+                        <i class="fa fa-map-marker"></i>
+                        Ставрополь, Комсак
+                    </address>
+                </div>
+                <p class="h5 text-primary mt-2 d-block font-weight-light">
+                    Главный врач
+                </p>
+                <p class="lead mt-4">Родился в 2019 году, лечит всех и всё</p>
+                <section class="mt-5">
+                    <h3 class="h6 font-weight-light text-secondary text-uppercase">Рейтинг</h3>
+                    <div class="d-flex align-items-center">
+                        <strong class="h1 font-weight-bold m-0 mr-3">-100/5</strong>
+                    </div>
+                </section>
+                <section class="mt-4">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                Информация о враче
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                Отзывы
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content py-4" id="myTabContent">
+                        <div class="tab-pane py-3 fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h6 class="text-uppercase font-weight-light text-secondary">
+                                Контактная информация
+                            </h6>
+                            <dl class="row mt-4 mb-4 pb-3">
+                                <dt class="col-sm-3">Номер телефона</dt>
+                                <dd class="col-sm-9">+7 962 028 58 27</dd>
+
+                                <dt class="col-sm-3">Домашний адрес</dt>
+                                <dd class="col-sm-9">
+                                    <address class="mb-0">
+                                        г. Ставрополь<br />
+                                        ул. Комсачная, дом 5
+                                    </address>
+                                </dd>
+
+                                <dt class="col-sm-3">E-mail адрес</dt>
+                                <dd class="col-sm-9">
+                                    <a>kazbek@gmail.com</a>
+                                </dd>
+                            </dl>
+
+                            <h6 class="text-uppercase font-weight-light text-secondary">
+                                Общая информация
+                            </h6>
+                            <dl class="row mt-4 mb-4 pb-3">
+                                <dt class="col-sm-3">Дата рождения</dt>
+                                <dd class="col-sm-9">Январь 21, 2019</dd>
+                                <dt class="col-sm-3">Пол</dt>
+                                <dd class="col-sm-9">Мужской</dd>
+                            </dl>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="review-list">
+                                <div class="review">
+                                    <h4 class="name">Шахновский Роман - 4 мая 2018</h4>
+                                    <div class="ratting">
+                                        <p>Оценка: 5/5</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Спасибо за новую руку!</p>
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <h4 class="name">Демченко Николай - 19 декабря 2019</h4>
+                                    <div class="ratting">
+                                        <p>Оценка: -205/5</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Убил меня</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

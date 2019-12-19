@@ -15,11 +15,38 @@ namespace MiniHackathon.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult PersonalAccountClient()
+        {
+            return View();
+        }
+        public IActionResult PersonalAccountDoctor()
         {
             return View();
         }
 
+        public IActionResult AppointmentToTheDoctor()
+        {
+            return View();
+        }
+
+        public IActionResult AboutService()
+        {
+            return View();
+        }
+
+        public IActionResult ListOfDoctors()
+        {
+            return View();
+        }
+        public IActionResult ItemListOfDoctor()
+        {
+            return View();
+        }
+        public IActionResult PatientApplications()
+        {
+            return View();
+        }
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
