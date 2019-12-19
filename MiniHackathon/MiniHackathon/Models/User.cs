@@ -17,5 +17,6 @@ namespace MiniHackathon.Models
         public string Sex { get; set; }
         public DateTime DayOfBirth { get; set; }
         public string Email { get; set; }
+
     }
 }
