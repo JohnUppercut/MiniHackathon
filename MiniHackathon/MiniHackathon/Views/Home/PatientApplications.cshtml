@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "PatientApplications";
+}
+
+    <div class="container">
+        <div class="applications">
+            <h6 class="text-uppercase font-weight-light text-secondary">
+                Заявка пациента
+            </h6>
+            <dl class="row mt-12 mb-4 pb-3">
+                <dt class="col-sm-5">Ф.И.О. пациента, дата рождения</dt>
+                <dd class="col-sm-7">Иванов Иван Иванович, 22.10.1998</dd>
+                <dt class="col-sm-5">Время записи</dt>
+                <dd class="col-sm-7">19.12.2019</dd>
+                <dt class="col-sm-5">Стоимость</dt>
+                <dd class="col-sm-7">Бесплатная</dd>
+                <dt class="col-sm-5">Жалобы</dt>
+                <dd class="col-sm-7">Болит попа</dd>
+            </dl>
+        </div>
+        <div class="response">
+            <h6 class="text-uppercase font-weight-light text-secondary">
+                Ответ пациенту
+            </h6>
+            <a class="btn btn-outline-primary" asp-area="" asp-controller="Home" asp-action="ListOfDoctors">Назначить посещение</a>
+            <a class="btn btn-outline-primary" asp-area="" asp-controller="Home" asp-action="ListOfDoctors">Назначить анализы</a>
+        </div>
+    </div>
+
